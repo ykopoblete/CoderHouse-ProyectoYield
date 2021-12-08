@@ -3,6 +3,132 @@
     padding: 0;
 }
 
+/*Aquí está lo que no está modificado aún*/
+
+body{
+    background-color: black;
+}
+
+#head_list{
+    position: relative;
+    padding: 10px 0;
+}
+
+#head #menu #head_list li{
+    display: inline-block;
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+.Topimage{
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.imglogo_header{
+    width: 200px;
+    padding: 0px 10px;
+}
+
+.Flujoimage{
+    width: 900px;
+    padding: 20px 0;
+}
+
+#head #menu #head_list li a{
+    color: white;
+    text-decoration: none;
+}
+
+#head #menu #head_list li a:hover{
+    text-decoration: underline;
+}
+#head #menu #head_list li .imglogo_header{
+    margin-right: 70px;
+    margin-left: 40px;
+}
+
+/* ******************************************* */
+
+#head main{
+    color: white;
+    margin: 0 auto;
+    width:900px;
+}
+
+#head main div{
+}
+
+#head main div h1{
+    /*Este texto será una imagen que hace transiciones y siga el color que tiene*/
+    padding: 20px 0;
+    color:rgba(193,0,151,255);
+    text-align: center;
+}
+
+#head main div #Textocentro{
+    color: white;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+#head main div #subscription{
+    padding: 20px 0;
+    display: flexbox;
+    color: orange;
+}
+
+#head main div #subscription #subinput{
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    height: 30px;
+    background-color: grey;
+    margin-left: 100px;
+}
+
+::placeholder{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    display: block;
+    
+}
+
+#head main div #subscription #subbutton{
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: rgba(193,0,151,255);
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+#head main div #Titlevideo{
+    /*Este texto será más producido en el futuro*/
+    color: rgba(193,0,151,255);
+    padding: 20px 40px;
+    text-align: center;
+    size: 1000px;
+}
+
+iframe{
+    display: block;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+
+
+/*Hasta aquí llega lo no modificado*/
+
 .logo{
     width: 300px;
     height: 100px;
