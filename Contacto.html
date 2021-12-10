@@ -4,57 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/79db359a1d.js" crossorigin="anonymous"></script>
     <title>Yield Contacto</title>
 </head>
-<body>
-    <header id="head">
-        <div id="menu">
-            <ul id="head_list">
-                <li>
-                    <a href="quienesSomos.html"><img class="imglogo_header" src="images/Marca Yield-03.png"></a>
-                </li>
-                <li>
-                    <a href="index.html">Portada</a>
-                </li>
-                <li>
-                    <a href="Productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="Soluciones.html">Soluciones</a>
-                </li>
-                <li>
-                    <a href="quienesSomos.html">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
-                </li>
-            </ul>
+<body class='contactFull'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images/Marca Yield-03.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Soluciones.html">Soluciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <main>
-            <h1> FORMULARIO DE CONTACTO </h1>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" >
-            <br>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido">
-            <br>
-            <label for="email">Email</label>
-            <input type="text" name="email">
-            <br>
-            <label for="telefono">Teléfono Móvil</label>
-            <input type="text" name="telefono">
-            <br>
-            <label for="direccion">Dirección</label>
-            <input type="text" name="direccion">
-            <br>
-            <h4>Comentario</h4>
-            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-        </main>
-    </header>
+    </nav>
+    <body class='contactContainer'>
+        <div class='container mt-5'>
+            <h1>Formulario de Contacto</h1>
+            <form class='row g-3'>
+                <div class='col-md-6'>
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class='form-control' id='firstName' required>
+                </div>
+                <div class='col-md-6'>
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input type="text" class='form-control' id='lastName' required>
+                </div>
+                <div class='col-md-8'>
+                    <label for="correo" class='form-label'>E-mail</label>
+                    <input type="email" class='form-control' id="correo" required>
+                </div>
+                <div class='col-md-4'>
+                    <label for="telefono" class='form-label'>Teléfono</label>
+                    <input type="text" class='form-control' id="telefono" placeholder="+56 123456789">
+                </div>
+                <div class='col-md-12'>
+                    <label for="comentarios" class='form-label'>Comentarios</label>
+                    <textarea class='form-control' id="comentarios" rows="5"></textarea>
+                </div>
+                <div class='col-md-12'>
+                    <button type='enviar' class='btn btn-primary'>Enviar</button>
+                </div>
+            </form>
+        </div>
+    </body>
     <footer id="footer">
         <div class="footer-container">
             <div class="box_footer">
@@ -68,7 +82,7 @@
                 </div>
             </div>
             <div class="box_footer_1">
-                <h2>Ayuda</h2>
+                <h4>Ayuda</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-people-carry"></i>   Soporte Técnico</a></li>
                     <li><a href="#"><i class="fas fa-question-circle"></i>   Preguntas y Respuestas</a></li>
@@ -76,21 +90,21 @@
                 </ul>
             </div>
             <div class="box_footer_2">
-                <h2>Ubicaciones</h2>
+                <h4>Ubicaciones</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-globe-americas"></i>   Chile</a></li>
                     <li><a href="#"><i class="fas fa-globe-asia"></i>   Corea del Sur</a></li>
                 </ul>
             </div>
             <div class="box_footer_3">
-                <h2>Conectar</h2>
+                <h4>Conectar</h4>
                 <ul>
                     <li><a href="#"><i class="fab fa-linkedin"></i>   Linkedin</a></li>
                     <li><a href="#"><i class="fas fa-at"></i>   Email</a></li>
                 </ul>    
             </div>
             <div class="box_footer_4">
-                <h2>Información Legal</h2>
+                <h4>Información Legal</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-users"></i>   Sobre Nosotros</a></li>
                     <li><a href="#"><i class="fas fa-check-square"></i>   Términos de Uso</a></li>
@@ -99,6 +113,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
