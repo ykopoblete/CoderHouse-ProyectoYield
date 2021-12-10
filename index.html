@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/79db359a1d.js" crossorigin="anonymous"></script>
     <title>Yield Portada</title>
 </head>
 <body>
-    <nav class='nav-bar'>
-        <div class='container'>
-            <div class='img'>
-            <img class="logo" src="images/Marca Yield-03.png">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images/Marca Yield-03.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Soluciones.html">Soluciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienesSomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="menu_items">
-                <li>
-                    <a class='selected' href="index copy.html">Portada</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="soluciones.html">Soluciones</a>
-                </li>
-                <li>
-                    <a href="quienesSomos.html">Quienes Somos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
         </div>
     </nav>
     <section class='cuerpo'>
@@ -38,7 +44,7 @@
             <img class="topImage" src="images/fondotop.jpg" alt="">
         </div>
         <div class='solucionesTec'>
-            <h1 id="Titletexto">SOLUCIONES TECNOLÓGICAS</h1>
+            <h2 id="Titletexto">SOLUCIONES TECNOLÓGICAS</h2>
             <p>
                 Las nuevas tecnologías impulsan el desarrollo. El desarrollo optimiza procesos.
                 Procesos optimizados aumentan los beneficios. Mas beneficios incrementan el valor.
@@ -60,12 +66,14 @@
                 allowfullscreen>
             </iframe>
         </div>
-        <div class="titleFlujo">
-            <h1>FLUJO DE TRABAJO CON LOS DATOS</h1>
-        </div>
-        <div class='flujo'>
-            <!--Cambiar esta imagen por una mejor-->
-            <img class="flujoImage" src="images/flujo.jpg" alt="">
+        <div class='flujoTrabajo'>
+            <div class="titleFlujo">
+                <h2>FLUJO DE TRABAJO CON LOS DATOS</h2>
+            </div>
+            <div class='flujo'>
+                <!--Cambiar esta imagen por una mejor-->
+                <img class="img-fluid" src="images/flujo.jpg" alt="">
+            </div>
         </div>
     </section>
     <footer id="footer">
@@ -81,7 +89,7 @@
                 </div>
             </div>
             <div class="box_footer_1">
-                <h2>Ayuda</h2>
+                <h4>Ayuda</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-people-carry"></i>   Soporte Técnico</a></li>
                     <li><a href="#"><i class="fas fa-question-circle"></i>   Preguntas y Respuestas</a></li>
@@ -89,21 +97,21 @@
                 </ul>
             </div>
             <div class="box_footer_2">
-                <h2>Ubicaciones</h2>
+                <h4>Ubicaciones</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-globe-americas"></i>   Chile</a></li>
                     <li><a href="#"><i class="fas fa-globe-asia"></i>   Corea del Sur</a></li>
                 </ul>
             </div>
             <div class="box_footer_3">
-                <h2>Conectar</h2>
+                <h4>Conectar</h4>
                 <ul>
                     <li><a href="#"><i class="fab fa-linkedin"></i>   Linkedin</a></li>
                     <li><a href="#"><i class="fas fa-at"></i>   Email</a></li>
                 </ul>    
             </div>
             <div class="box_footer_4">
-                <h2>Información Legal</h2>
+                <h4>Información Legal</h4>
                 <ul>
                     <li><a href="#"><i class="fas fa-users"></i>   Sobre Nosotros</a></li>
                     <li><a href="#"><i class="fas fa-check-square"></i>   Términos de Uso</a></li>
@@ -112,5 +120,6 @@
             </div>
         </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
