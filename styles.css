@@ -3,131 +3,9 @@
     padding: 0;
 }
 
-/*Aquí está lo que no está modificado aún*/
-
 body{
     background-color: black;
 }
-
-#head_list{
-    position: relative;
-    padding: 10px 0;
-}
-
-#head #menu #head_list li{
-    display: inline-block;
-    padding: 10px 20px;
-    vertical-align: middle;
-}
-
-.Topimage{
-    width: 900px;
-    height: 300px;
-    border-radius: 10px;
-}
-
-
-.imglogo_header{
-    width: 200px;
-    padding: 0px 10px;
-}
-
-.Flujoimage{
-    width: 900px;
-    padding: 20px 0;
-}
-
-#head #menu #head_list li a{
-    color: white;
-    text-decoration: none;
-}
-
-#head #menu #head_list li a:hover{
-    text-decoration: underline;
-}
-#head #menu #head_list li .imglogo_header{
-    margin-right: 70px;
-    margin-left: 40px;
-}
-
-/* ******************************************* */
-
-#head main{
-    color: white;
-    margin: 0 auto;
-    width:900px;
-}
-
-#head main div{
-}
-
-#head main div h1{
-    /*Este texto será una imagen que hace transiciones y siga el color que tiene*/
-    padding: 20px 0;
-    color:rgba(193,0,151,255);
-    text-align: center;
-}
-
-#head main div #Textocentro{
-    color: white;
-    padding: 20px 0;
-    text-align: justify;
-}
-
-#head main div #subscription{
-    padding: 20px 0;
-    display: flexbox;
-    color: orange;
-}
-
-#head main div #subscription #subinput{
-    display: inline-block;
-    text-align: center;
-    width: 500px;
-    height: 30px;
-    background-color: grey;
-    margin-left: 100px;
-}
-
-::placeholder{
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    display: block;
-    
-}
-
-#head main div #subscription #subbutton{
-    text-align: center;
-    width: 200px;
-    height: 35px;
-    font-size: 16px;
-    background-color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-color: rgba(193,0,151,255);
-    color: white;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-
-
-#head main div #Titlevideo{
-    /*Este texto será más producido en el futuro*/
-    color: rgba(193,0,151,255);
-    padding: 20px 40px;
-    text-align: center;
-    size: 1000px;
-}
-
-iframe{
-    display: block;
-    padding: 20px 40px;
-    margin: 0 auto;
-}
-
-
-
-/*Hasta aquí llega lo no modificado*/
 
 /*
 .container{
@@ -142,28 +20,12 @@ iframe{
 .logo{
     width: 250px;
     height: 80px;
-    align-items: center;
-    justify-content: center;
     background: black;
-    grid-area: logo;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 nav > *{
-    display: flex;
     font-size: 18px;
-    justify-content: center;
-    align-items: center;
     background: black;
-}
-
-.nav-bar .container ul{
-    list-style: none;
-    display: flex;
 }
 
 .navbar{
@@ -171,16 +33,9 @@ nav > *{
 }
 
 .navbar-nav{
-    grid-area: header;
     text-decoration: none;
-    display: flex;
     color: white;
     padding: 1.6rem;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu_items a:hover{
@@ -190,16 +45,6 @@ nav > *{
 /* Sección central de la página*/
 
 .cuerpo{
-    display: grid;
-    grid-template-areas:
-    'topimg'
-    'solucion'
-    'inscripcion'
-    'video'
-    'flujoTrabajo'
-    'footer'
-    ;
-    grid-template-rows: 3fr 2fr 1fr 4fr 3fr 1fr;
     column-gap: 10px;
     row-gap: 5px;
     background-color: black;
@@ -217,52 +62,25 @@ section > *{
 }
 
 .topImage{
-    grid-area: topimg;
-    display: flex;
     width: 100%;
     height: 350px;
     border-radius: 10px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-}
-
-.solucionesTec{
-    grid-area: solucion;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.inscripcion{
-    grid-area: inscripcion;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 /*Para el botón de la inscripción*/
 
-.inscripcion #subinput{
-    text-align: center;
-    width: 500px;
-    height: 30px;
-    background-color: white;
-    margin-left: 100px;
+#subinput{
+    background-color: grey;
+    border-radius: 5px;
 }
 
-.inscripcion #subbutton{
-    text-align: center;
-    width: 200px;
-    height: 35px;
+#subbutton{
     font-size: 16px;
     background-color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-color: rgba(193,0,151,255);
     color: white;
     border-radius: 10px;
-    margin: 0 auto;
     animation: animacion 3s infinite;
 }
 
@@ -291,110 +109,19 @@ section > *{
     position: relative;
 }
 
-.flujoTrabajo{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-}
-
-
-.titleFlujo{
-    grid-area: titleFlujo;
-}
-
-.flujo{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 .flujoImage{
     width: 1200px;
     position: relative;
     border-radius: 10px;
 }
 
-/*-----Main quienesSomos-----*/
+/*----- EMPIEZA QUIENES SOMOS -----*/
 
-.main_container_qsomos {
-    display: grid;
-    grid-template-areas:
-    'logo header' 
-    'equipo equipo'
-    'uno dos'
-    'tres tres'
-    'footer footer'
-    ;
-    grid-template-columns: 1fr 1fr;
-    background-color: black;
-    grid-template-rows: 0.5fr 1fr 2fr 2fr 1fr;
-    row-gap: 10px;
+.container .member img{
+    width: 300px;
 }
 
-/*-----Equipo-----*/
-
-.equipo{
-    grid-area: equipo;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color:white;
-}
-
-.equipo h1{
-    color: #2879f3;
-}
-
-.main_container_qsomos h4{
-    color: #2879f3;
-    font-size: 20px;
-}
-
-/*Relacionado a Yerko*/
-
-.yerko{
-    grid-area: uno;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-}
-
-/*Relacionado a Ildolfo*/
-
-.ildo{
-    grid-area: dos;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-}
-
-/*Relacionado a Rodrigo*/
-
-.rodrigo{
-    grid-area: tres;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-}
-
-/*Para todas las descripciones y fotos del equipo*/
-
-.main_container_qsomos img{
-    margin: 0 auto;
-    width: 200px;
-}
-
-.name_description{
-    max-width: 600px;
-    text-align: center;
-    justify-content: center;
-    margin: 10px auto;
-}
-
-/*-----HASTA AQUÍ LLEGA QUIENES SOMOS-----*/
+/*-----TERMINA QUIENES SOMOS-----*/
 
 /*-----EMPIEZA FORMULARIO CONTACTIO-----*/
 
@@ -408,10 +135,6 @@ section > *{
 /*-----HASTA AQUí LLEGA FORMULARIO CONTACTO-----*/
 
 /*----Productos empieza aquí----*/
-.title{
-    text-align: center;
-    padding: 25px 0;
-}
 
 .container{
     flex-direction: column;
@@ -441,44 +164,31 @@ section > *{
 
 /*-----Soluciones empieza acá-----*/
 
+.solucionesCards .card-img-top{
+    height: 550px;
+    width: 800px;
+}
 
+.solucionesCards .card-body{
+    height: 150px;
+    width: 200px;
+}
+.solucionesCards .card-title{
+    width: 800px;
+}
+
+.solucionesCards .card-text{
+    width: 750px;
+    text-align: center;
+}
 
 /*-----Soluciones termina acá.-----*/
 
+/*Footer comienza acá*/
 
-/*-----Footer-----*/
-
-footer{
-    grid-area: footer;
-    position: relative;
-    width: 100%;
-    height: 50px 100px;
-    background: black;
-    padding: 30px;
-}
-
-footer > *{
-    align-content: center;
-}
-
-.footer-container{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    'message uno dos tres cuatro'
-    ;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    color: white;
-    column-gap: 30px;
-    row-gap: 20px;
-    background-color: black;
-    margin-left: 30px;
-}
-
-/*Para color de títulos de footer*/
-
-.footer-container h4{
+.footer-cont h4{
     color: rgba(193,0,151,255);
+    padding-left: 0;
 }
 
 /*Logo del footer*/
@@ -487,222 +197,24 @@ footer > *{
     width: 150px;
 }
 
-ul{
-    padding-left: 0;
+.footer-cont .container ul{
+    padding-left:0;
+    list-style: none;
 }
 
-.box_footer{
-    grid-area: message;
-    position: relative;
-}
-
-.box_footer .terminos p{
-    justify-self: center;
+.footer-cont .container ul a{
+    text-decoration: none;
     color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-cont .container p{
     font-size: 12px;
 }
 
-/*Footer Ayuda*/
-
-.box_footer_1{
-    grid-area: uno;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.box_footer_1 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.box_footer_1 ul a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.box_footer_1 ul a:hover{
+.footer-cont ul a:hover{
     color: rgba(193,0,151,255);
 }
 
-/*Footer Ubicaciones*/
-
-.box_footer_2{
-    grid-area: dos;
-    position: relative;
-}
-
-.box_footer_2 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.box_footer_2 ul a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.box_footer_2 ul a:hover{
-    color: rgba(193,0,151,255);
-}
-
-/*Footer Conectar*/
-
-.box_footer_3{
-    grid-area: tres;
-    position: relative;
-}
-
-.box_footer_3 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.box_footer_3 ul a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.box_footer_3 ul a:hover{
-    color: rgba(193,0,151,255);
-}
-
-/*Footer Información Legal*/
-
-.box_footer_4{
-    grid-area: cuatro;
-    position: relative;
-}
-
-.box_footer_4 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.box_footer_4 ul a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.box_footer_4 ul a:hover{
-    color: rgba(193,0,151,255);
-}
-
-/*-----Haciendo responsive-----*/
-
-
-@media screen and (max-width:1023px){
-    .menu_items a{
-        padding: 0.5rem;
-        font-size: 18px;
-    }
-    .topImage{
-        width: 100%;
-    }
-    .inscripcion #subinput{
-        margin: auto auto;
-        align-content: center;
-        text-align: center;
-    }
-    .inscripcion #subbutton{
-        display: flex;
-        text-align:center;
-        justify-content: center;
-    }
-    .solucionesTec h1{
-        font-size: 20px;
-    }
-    .solucionesTec p{
-        font-size: 16px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    .videoTitle h2{
-        font-size: 18px;
-    }
-    .flujo{
-        font-size: 16px;
-    }
-    footer{
-        padding: 30px;
-    }
-    .footer-container{
-        width: 100%;
-        display: grid;
-        grid-template-areas: 
-        'message message uno ' 
-        'dos tres cuatro'
-        ;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media screen and (max-width:600px){
-    .menu_items a{
-        padding: 0.1rem;
-        font-size: 12px;
-    }
-    .topImage{
-        width: 100%;
-        height: 200px;
-    }
-    .solucionesTec p{
-        margin-top: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .inscripcion #subinput{
-        width: 400px; 
-    }
-    .videoTitle iframe{
-        width: 400px;
-        height: 190px;
-    }
-    .equipo h1{
-        font-size: 20px;
-    }
-    .main_container_qsomos img{
-        margin: 0 auto;
-        width: 100px;
-    }
-    .main_container_qsomos div p{
-        font-size: 14px;
-    }
-
-    footer{
-        padding: 0px;
-    }
-    .imgFooter{
-        margin-left: 150px;
-    }
-    .box_footer .terminos p{
-        margin-left: 0px;
-    }
-    .footer-container{
-        width: 100%;
-        display: grid;
-        grid-template-areas: 
-        'message message'
-        'uno dos' 
-        'tres cuatro'
-        ;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 10px;
-    }
-    .footer-container p{
-        margin-right: 20px;
-        text-align: center;
-    }
-}
+/*-----Footer termina acá-----*/
