@@ -67,6 +67,51 @@ section > *{
     border-radius: 10px;
 }
 
+.topImageClass{
+    position: relative;
+    overflow: hidden;
+}
+
+.topImageClass:before{
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 220%;
+    background: rgba(235,53,131,0.7);
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: .5s;
+}
+
+.topImageClass:hover:before{
+    left: 1%;
+}
+
+.topImageClass .card-text{
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: #fff;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+}
+
+.topImageClass .card-text h3{
+    font-family: poppins;
+}
+
+.topImageClass:hover .card-text{
+    top:80px;
+    text-align: left;
+
+}
+
+
 /*Para el botón de la inscripción*/
 
 #subinput{
@@ -121,6 +166,14 @@ section > *{
     width: 300px;
 }
 
+.member h4{
+    color:#2879f3;
+}
+
+.member h6{
+    color: rgba(131, 124, 127, 0.87);
+}
+
 /*-----TERMINA QUIENES SOMOS-----*/
 
 /*-----EMPIEZA FORMULARIO CONTACTIO-----*/
@@ -144,6 +197,11 @@ section > *{
     padding: 10px 10px;
 }
 
+.cardBorder{
+    border: 3px solid #2879f3;
+    border-radius: 5px;
+}
+
 .card-title{
     color: rgba(193,0,151,255);
 }
@@ -160,13 +218,25 @@ section > *{
     height: 200px;
 }
 
+.imageEffect{
+    overflow: hidden;
+}
+
+.imageEffect img{
+    transition: all 1.5s ease;
+}
+
+.imageEffect:hover img{
+    transform: scale(1.2);
+}
+
 /*-----Productos termina aquí-----*/
 
 /*-----Soluciones empieza acá-----*/
 
 .solucionesCards .card-img-top{
-    height: 550px;
-    width: 800px;
+    height: 350px;
+    width: 600px;
 }
 
 .solucionesCards .card-body{
@@ -174,11 +244,11 @@ section > *{
     width: 200px;
 }
 .solucionesCards .card-title{
-    width: 800px;
+    width: 600px;
 }
 
 .solucionesCards .card-text{
-    width: 750px;
+    width: 550px;
     text-align: center;
 }
 
