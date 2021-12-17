@@ -146,20 +146,6 @@ section > *{
 
 /*-----Hasta aquí llega el botón-----*/
 
-
-.videoTitle{
-    grid-area: video;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.flujoImage{
-    width: 1200px;
-    position: relative;
-    border-radius: 10px;
-}
-
 /*----- EMPIEZA QUIENES SOMOS -----*/
 
 .container .member img{
