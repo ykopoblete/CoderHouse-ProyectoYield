@@ -1,13 +1,33 @@
 //Variables
 
-$color-fondo: black;
-$color-paleta1: rgba(193,0,151,255);
-$color-paleta2: #2879f3;
-$color-paleta3: rgba(235,53,131,0.7);
+$colores:(
+    colorfondo:black,
+    colorpaleta1: rgba(193,0,151,255),
+    colorpaleta2: #2879f3,
+    colorpaleta3: rgba(235,53,131,0.7),
+);
+
+$color-fondo: map-get($colores,colorfondo);
+$color-paleta1: map-get($colores,colorpaleta1);
+$color-paleta2: map-get($colores,colorpaleta2);
+$color-paleta3: map-get($colores,colorpaleta3);
+
+@mixin height ($h:100px, $ha:height) {
+    #{$ha}:$h;
+}
+
+@mixin marpad ($m:0, $p:0, $ma:margin, $pa:padding) {
+    #{$ma}:$m;
+    #{$pa}:$p;
+}
+
+@mixin colorfondo {
+    background: $color-fondo;
+}
+
 
 * {
-    margin:0;
-    padding:0;
+    @include marpad();
 }
 
 body{
@@ -15,14 +35,14 @@ body{
 }
 
 .logo{
+    @include height($h:80px,);
     width: 250px;
-    height: 80px;
-    background: $color-fondo;
+    @include colorfondo ();
 }
 
 nav > *{
     font-size: 18px;
-    background: $color-fondo;
+    @include colorfondo ();
 }
 
 .navbar{
@@ -30,7 +50,7 @@ nav > *{
     .navbar-nav{
         text-decoration: none;
         color: white;
-        padding: 1.6rem;
+        @include marpad($m:1.6rem,);
     }
 }
 
@@ -45,7 +65,7 @@ nav > *{
 .cuerpo{
     column-gap: 10px;
     row-gap: 5px;
-    background-color: $color-fondo;
+    @include colorfondo ();
     h2{
         color: $color-paleta2;
     }
@@ -54,7 +74,7 @@ nav > *{
 section > *{
     display: flex;
     align-items: center;
-    background: color-fondo;
+    @include colorfondo ();
     color: white;
 }
 
@@ -62,15 +82,15 @@ section > *{
     position: relative;
     overflow: hidden;
     .topImage{
+        @include height($h:350px,);
         width: 100%;
-        height: 350px;
         border-radius: 10px;
     }
     &:before{
+        @include height($h:220%,);
         position: absolute;
         content: '';
         width: 80%;
-        height: 220%;
         background: $color-paleta3;
         top: -50%;
         left: -100%;
@@ -90,7 +110,7 @@ section > *{
     }
     .card-text{
         width: 100%;
-        padding: 0 20px;
+        @include marpad($p:0 20px);
         position: absolute;
         top: -100%;
         color: #fff;
@@ -112,7 +132,7 @@ section > *{
 
     #subbutton{
         font-size: 16px;
-        background-color: $color-fondo;
+        @include colorfondo ();
         font-family: Georgia, 'Times New Roman', Times, serif;
         border-color: $color-paleta1;
         color: white;
@@ -178,20 +198,20 @@ section > *{
             }
         }
         .card-img-top{
-            height: 450px;
+            @include height($h:450px,);
         }
         .card-body{
-            height: 200px;
+            @include height($h:200px,);
         }
     }
 
     .solucionesCards{
         .card-img-top{
-            height: 350px;
+            @include height($h:330px,);
             width: 600px;
         }
         .card-body{
-            height: 150px;
+            @include height($h:150px,);
             width: 200px;
         }
         .card-title{
@@ -204,6 +224,16 @@ section > *{
     }
 }
 
+.title{
+    .row{
+        .img-fluid{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
 .footer-cont{
     h4{
         color: $color-paleta1;
@@ -212,7 +242,6 @@ section > *{
     .imgFooter{
         width: 150px;
     }
-
     .container{
         ul{
             padding-left:0;
