@@ -9,7 +9,7 @@ body {
 
 .logo {
   height: 80px;
-  width: 250px;
+  width: 200px;
   background: black;
 }
 
@@ -183,6 +183,15 @@ section > * {
 .title .row .img-fluid {
   margin-bottom: 30px;
 }
+.title .videoRedes {
+  width: 100%;
+  position: relative;
+}
+.title .videoRedes iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .footer-cont h4 {
   color: #c10097;
@@ -206,6 +215,156 @@ section > * {
 }
 .footer-cont .container p {
   font-size: 12px;
+}
+
+@media (max-width: 265px) {
+  .logo {
+    width: 70px;
+    height: 28px;
+  }
+
+  .row .parrafo p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 365px) {
+  .logo {
+    width: 150px;
+    height: 60px;
+  }
+
+  .row .parrafo p {
+    font-size: 14px;
+  }
+
+  .topImageClass {
+    position: relative;
+    overflow: hidden;
+  }
+  .topImageClass .topImage {
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .topImageClass:before {
+    height: 100%;
+    position: absolute;
+    content: "";
+    width: 80%;
+    background: rgba(235, 53, 131, 0.7);
+    top: -10%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: 0.5s;
+  }
+  .topImageClass:hover:before {
+    left: 1%;
+  }
+  .topImageClass:hover .card-text {
+    top: 10px;
+    text-align: left;
+  }
+  .topImageClass .card-text {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: #fff;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+  }
+  .topImageClass .card-text h3 {
+    font-family: poppins;
+    font-size: 10px;
+  }
+  .topImageClass .card-text h5 li {
+    font-size: 10px;
+    font-family: poppins;
+  }
+
+  .container .row .card-body {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .row h1 {
+    font-size: 10px;
+  }
+  .row .parrafo p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .row h1 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 992px) {
+  .topImageClass {
+    position: relative;
+    overflow: hidden;
+  }
+  .topImageClass .topImage {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .topImageClass:before {
+    height: 180%;
+    position: absolute;
+    content: "";
+    width: 80%;
+    background: rgba(235, 53, 131, 0.7);
+    top: -20%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: 0.5s;
+  }
+  .topImageClass:hover:before {
+    left: 1%;
+  }
+  .topImageClass:hover .card-text {
+    top: 10px;
+    text-align: left;
+  }
+  .topImageClass .card-text {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    position: absolute;
+    top: -100%;
+    color: #fff;
+    left: 0;
+    z-index: 2;
+    transition: 1.1s;
+  }
+  .topImageClass .card-text h3 {
+    font-family: poppins;
+    font-size: 18px;
+  }
+  .topImageClass .card-text h5 li {
+    font-size: 18px;
+    font-family: poppins;
+  }
+
+  .container .row .card-title {
+    font-size: 14px;
+  }
+  .container .row .card-text {
+    font-size: 12px;
+  }
+  .container .row .card-img-top {
+    height: 300px;
+  }
+  .container .row .card-body {
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
