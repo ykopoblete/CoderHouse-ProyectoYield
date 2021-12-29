@@ -3,7 +3,7 @@
 $colores:(
     colorfondo:black,
     colorpaleta1: rgba(193,0,151,255),
-    colorpaleta2: #2879f3,
+    colorpaleta2: rgb(40, 121, 243),
     colorpaleta3: rgba(235,53,131,0.7),
 );
 
@@ -189,37 +189,12 @@ section > *{
                 img{
                     transition: all 1.5s ease;
                 }
-
                 &:hover{
                     img{
                         transform: scale(1.2);
                     }
                 }
             }
-        }
-        .card-img-top{
-            @include height($h:450px,);
-        }
-        .card-body{
-            @include height($h:200px,);
-        }
-    }
-
-    .solucionesCards{
-        .card-img-top{
-            @include height($h:330px,);
-            width: 600px;
-        }
-        .card-body{
-            @include height($h:150px,);
-            width: 200px;
-        }
-        .card-title{
-            width: 600px;
-        }
-        .card-text{
-            width: 550px;
-            text-align: center;
         }
     }
 }
@@ -240,8 +215,6 @@ section > *{
         }
     }
 }
-
-
 
 .footer-cont{
     h4{
@@ -270,6 +243,10 @@ section > *{
             font-size: 12px;
         }
     }
+}
+
+.name{
+    color: $color-paleta2;
 }
 
 @media (max-width: 265px) {
@@ -352,9 +329,15 @@ section > *{
     .container{
         .row{
             .card-body{
-                @include height($h:400px,);
+                h5{
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 10px;
+                }
             }
         }
+        
     }
 }
 
@@ -428,22 +411,6 @@ section > *{
                     font-size: 18px;
                     font-family: poppins; 
                 }
-            }
-        }
-    }
-    .container{
-        .row{
-            .card-title{
-                font-size: 14px;
-            }
-            .card-text{
-                font-size: 12px;
-            }
-            .card-img-top{
-                @include height($h:300px,);
-            }
-            .card-body{
-                @include height($h:200px,);
             }
         }
     }

@@ -158,27 +158,6 @@ section > * {
 .container .row .cardBorder .imageEffect:hover img {
   transform: scale(1.2);
 }
-.container .row .card-img-top {
-  height: 450px;
-}
-.container .row .card-body {
-  height: 200px;
-}
-.container .solucionesCards .card-img-top {
-  height: 330px;
-  width: 600px;
-}
-.container .solucionesCards .card-body {
-  height: 150px;
-  width: 200px;
-}
-.container .solucionesCards .card-title {
-  width: 600px;
-}
-.container .solucionesCards .card-text {
-  width: 550px;
-  text-align: center;
-}
 
 .title .row .img-fluid {
   margin-bottom: 30px;
@@ -215,6 +194,10 @@ section > * {
 }
 .footer-cont .container p {
   font-size: 12px;
+}
+
+.name {
+  color: #2879f3;
 }
 
 @media (max-width: 265px) {
@@ -286,8 +269,11 @@ section > * {
     font-family: poppins;
   }
 
-  .container .row .card-body {
-    height: 400px;
+  .container .row .card-body h5 {
+    font-size: 12px;
+  }
+  .container .row .card-body p {
+    font-size: 10px;
   }
 }
 @media (max-width: 576px) {
@@ -351,19 +337,6 @@ section > * {
   .topImageClass .card-text h5 li {
     font-size: 18px;
     font-family: poppins;
-  }
-
-  .container .row .card-title {
-    font-size: 14px;
-  }
-  .container .row .card-text {
-    font-size: 12px;
-  }
-  .container .row .card-img-top {
-    height: 300px;
-  }
-  .container .row .card-body {
-    height: 200px;
   }
 }
 
